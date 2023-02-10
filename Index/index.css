@@ -1,20 +1,21 @@
-/* INICIO */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap%27");
+
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "League Spartan";
-  font-weight: 900;
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
 }
-.inicio {
-  background-image: url(imagenes/carretera.png);
-  background-size: cover;
-  height: 85vh;
-  width: 100%;
+
+/* MOVIL */
+.inicioTotal {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background: url(imagenes/carretera2.png) no-repeat;
+  background-size: 100% 100%;
 }
 .texto {
-  font-size: 5vw;
+  font-size: 7vw;
   margin-left: 20px;
-  margin-top: 50px;
+  margin-top: 70px;
   font-weight: bold;
   height: auto;
 }
@@ -22,7 +23,7 @@ span {
   color: #d5b92d;
 }
 .texto p {
-  width: 50%;
+  width: 70%;
 }
 
 .logo {
@@ -40,65 +41,87 @@ span {
 }
 
 /* INSTRUCTORES */
-.cursos,
+
 .instructores {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 40px;
-  background: url(imagenes/manchaAzul.jpg);
-  background-size: 100%, 100%;
   height: 100vh;
+  width: 100%;
+  text-align: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background: url(imagenes/movilAzul.png);
+  background-size: 100% 100%;
 }
-.cursos{
-    background: url(imagenes/manchaDorada.jpg);
-    background-size: 100%, 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
+.instructorText {
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
 }
-.instructorDer,
-.instructorIzq {
-  width: 45%;
-  height: 100%;
+.cursosText p,
+.instructorText p {
+  padding-top: 15%;
+
+  font-size: 5vw;
+  font-weight: bold;
 }
-.instructorIzq img,
-.instructorDer img {
+.instructorImg {
+  margin-top: 15%;
   width: 100%;
 }
-
+.instructorImg img {
+  width: 90%;
+  height: 100%;
+}
 .instructorBtn {
+  margin-top: 40%;
+  width: 80%;
+  height: 50px;
   background-color: #d5b92d;
   color: white;
-  margin-top: 70%;
-  margin-right: 30%;
-  width: 80%;
-  padding: 15px 0;
-}
-.instructores button i {
-  margin-left: 10px;
 }
 
-.instructorText p {
-  font-size: 2vw;
+.instructorBtn i {
+  margin-left: 2%;
+}
+
+.cursos {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background: url(imagenes/movilDorado.png);
+  background-size: 100% 100%;
+}
+
+.cursosText {
   width: 80%;
   margin-left: 10%;
 }
 
-/* CURSOS */
-
-.cursoBtn {
-  width: 80%;
-  padding: 15px 0;
-  margin-top: 20%;
-}
-
-.cursoDivBtn {
+.cursosImg {
+  margin-top: 15%;
   width: 100%;
 }
-.fondoInstruc {
-  position: relative;
-  z-index: -1;
+.cursosImg img {
+  width: 80%;
+  height: 100%;
+}
+.cursosBtn {
+  margin-top: 30%;
+  width: 80%;
+  height: 50px;
+  background-color: #1c3144;
+  color: white;
+}
+.cursosBtn i {
+  margin-left: 2%;
+}
+
+.sliderCurso{
+  height: 100vh;
+  text-align: center;
+}
+.sliderCursoTexto{
+  padding-top:10%;
+}
+.sliderCursoTexto p{
+  margin-top:18%
 }
