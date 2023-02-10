@@ -125,3 +125,12 @@ span {
 .sliderCursoTexto p{
   margin-top:18%
 }
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  .carousel-inner{
+    width: 70% !important;
+    margin-left: 15%;
+  }
