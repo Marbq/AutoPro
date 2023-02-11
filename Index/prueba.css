@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-1 {
+    background-image: url('imagenes/carretera.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+  }
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+  nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  .section {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .text {
+    width: 750px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    margin-top:300px;
+  }
+  h1 {
+    font-size: 3vw;
+    color: #333;
+  }
+ 
+
+  .section-2 {
+    display: flex;
+    height: 100vh;
+    background-image: url('imagenes/manchaAzul.jpg');
+    background-size: cover;
+  }
+  
+  .section-2-left {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .section-2-right {
+    width: 50%;
+    min-width: 685px;
+  }
+  
+  .center-button {
+    width: 73%;
+    padding: 50px 20px ;
+    border: none;
+    border-radius: 5px;
+    background-color: #d5b92d;
+  }
+  
+  .center-img {
+    display: block;
+    margin: 60px auto;
+    max-width: 80%;
+    width: 100%;
+  }
+  
+.text-center{
+    margin-top:150px;
+}
+
+
+
+
+
+  .section-3 {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url('imagenes/manchaDorada.jpg');
+    background-size: cover;
+  }
+  
+  .section-3 .left {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .section-3 .left img {
+    width: 100%;
+    padding: 10%;
+  }
+  
+  .section-3 .right {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .section-3 .right .section-3-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .section-3 .right .section-3-button {
+    color: #fff;
+    width: 73%;
+    padding: 50px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c3144;
+    margin-top:355px;
+  }
+  .section-3 h1{
+    margin-top: 212px;
+    margin-right: 417px;
+  }
+
+
+
+
+  .section-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    height: 100vh;
+  }
+  
+  .section-title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .section-text {
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 20px 0;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 30%;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+  }
+  
+
+  .card-center {
+  width: 40%;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card-description {
+  font-size: 18px;
+}
+
+  
+
+/* Estilos para la sección 5 */
+.section-5 {
+    text-align: center;
+    height: 100vh;
+  }
+  
+
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .icon-container div {
+    text-align: center;
+    width: 33.33%;
+    margin: 0 10px;
+  }
+  
+  .icon-container i {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
