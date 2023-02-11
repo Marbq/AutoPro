@@ -4,6 +4,7 @@
     top: 50%;
 /*     transform: translateY(-50%); */
     overflow: hidden;
+    margin-top:5%;
   }
   #carousel div {
     position: absolute;
@@ -11,6 +12,7 @@
     opacity: 1;
   }
   #carousel div img {
+    border-radius: 20px;
     width: 400px;
     transition: width 400ms;
      -webkit-user-drag: none;
@@ -37,7 +39,7 @@
     transform: translateY(50px) translateX(-50%);
   }
   #carousel img:hover {
-    cursor: 
+    cursor: pointer;
   }
   #carousel div.prev img {
     width: 300px;
@@ -74,3 +76,10 @@
     width: 200px;
   }
   
+.buttons button{
+  margin-top:2%;
+  background:transparent;
+  border: none;
+  font-size: 40px;
+  margin:1%;
+}
