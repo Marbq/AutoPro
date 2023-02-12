@@ -1,136 +1,364 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap%27");
-
 * {
-  font-family: "League Spartan", sans-serif;
-  font-weight: bold;
-}
-
-/* MOVIL */
-.inicioTotal {
-  height: 100vh;
-  background-repeat: no-repeat;
-  background: url(imagenes/carretera2.png) no-repeat;
-  background-size: 100% 100%;
-}
-.texto {
-  font-size: 7vw;
-  margin-left: 20px;
-  margin-top: 70px;
-  font-weight: bold;
-  height: auto;
-}
-span {
-  color: #d5b92d;
-}
-.texto p {
-  width: 70%;
-}
-
-.logo {
-  width: 70px;
-}
-
-.navbar a {
-  font-weight: bold;
-}
-
-.navbar-nav.navbar-center {
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
-}
-
-/* INSTRUCTORES */
-
-.instructores {
-  height: 100vh;
-  width: 100%;
-  text-align: center;
-  background-repeat: no-repeat;
-  background: url(imagenes/movilAzul.png);
-  background-size: 100% 100%;
-}
-.instructorText {
-  text-align: center;
-  width: 80%;
-  margin-left: 10%;
-}
-.cursosText p,
-.instructorText p {
-  padding-top: 15%;
-
-  font-size: 5vw;
-  font-weight: bold;
-}
-.instructorImg {
-  margin-top: 15%;
-  width: 100%;
-}
-.instructorImg img {
-  width: 90%;
-  height: 100%;
-}
-.instructorBtn {
-  margin-top: 40%;
-  width: 80%;
-  height: 50px;
-  background-color: #d5b92d;
-  color: white;
-}
-
-.instructorBtn i {
-  margin-left: 2%;
-}
-
-.cursos {
-  height: 100vh;
-  width: 100%;
-  text-align: center;
-  background-repeat: no-repeat;
-  background: url(imagenes/movilDorado.png);
-  background-size: 100% 100%;
-}
-
-.cursosText {
-  width: 80%;
-  margin-left: 10%;
-}
-
-.cursosImg {
-  margin-top: 15%;
-  width: 100%;
-}
-.cursosImg img {
-  width: 80%;
-  height: 100%;
-}
-.cursosBtn {
-  margin-top: 30%;
-  width: 80%;
-  height: 50px;
-  background-color: #1c3144;
-  color: white;
-}
-.cursosBtn i {
-  margin-left: 2%;
-}
-
-.sliderCurso{
-  height: 100vh;
-  text-align: center;
-}
-.sliderCursoTexto{
-  padding-top:10%;
-}
-.sliderCursoTexto p{
-  margin-top:18%
-}
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 100%;
-      margin: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: 'League Spartan' !important;
   }
-  .carousel-inner{
-    width: 70% !important;
-    margin-left: 15%;
+
+  .section-1 {
+    background-image: url('imagenes/carretera.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+  nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  .section {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .text {
+    width: 750px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    margin-top:300px;
+  }
+  h1 {
+    font-size: 3vw;
+    color: #333;
+  }
+ 
+
+  .section-2 {
+    display: flex;
+    background-image: url('imagenes/manchaAzul.jpg');
+    background-size: cover;
+  }
+  
+  .section-2-left {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2vw;
+  }
+
+  .center-button i{
+    margin-left: 3%;
+  }
+  .section-2-right {
+    width: 48%;
+  }
+  
+  .center-button {
+    width: 60%;
+    padding: 20px 20px ;
+    border: none;
+    border-radius: 5px;
+    background-color: #d5b92d;
+    color:white;
+    margin-right: 20%;
+  }
+  
+  .center-img {
+    display: block;
+    margin: 60px auto;
+    width: 90%;
+  }
+  
+.text-center{
+    margin-top:10%;
+}
+
+
+
+
+
+  .section-3 {
+    display: flex;
+    justify-content: center;
+
+    background-color: #fff;
+    background-image: url('imagenes/manchaDorada.jpg');
+    background-size: cover;
+  }
+  
+  .section-3 .left {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .section-3 .left img {
+    width: 100%;
+    padding: 10%;
+  }
+  
+  .section-3 .right {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .section-3 .right .section-3-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .section-3-button2,
+  .section-3 .right .section-3-button {
+    color: #fff;
+    width: 73%;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c3144;
+    margin-top:20%;
+    font-size: 2vw;
+  }
+  .section-3 h1{
+    margin-top: 25%;
+    margin-right: 30%;
+  }
+ .section-3 i{
+  margin-left:4%;
+ }
+ .section-3-button2{
+  display: none;
+ }
+
+li{
+  list-style: none;
+  padding:0 5px;
+}
+
+  .section-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+
+    justify-content: center;
+  }
+
+  
+  .section-title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .section-4 h1{
+    color: #333;
+  }
+  .section-text {
+    font-size: 3rem;
+    text-align: center;
+    width: 50%;
+    margin: 20px 0;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 40%;
+    height: 700px;
+    background-color: white;
+
+    text-align: center;
+  }
+  
+  .card button{
+    width: 70%;
+    height: 50px;
+    border:1px solid #d5b92d;
+    background-color: transparent;
+    font-size: 3rem;
+    margin-top:20%;
+  }
+
+  .card-center button{
+    border:1px solid white;
+
+    color:white;
+  }
+.card-center{
+  background-color: #d5b92d;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  color:#d5b92d;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  
+}
+.card-center li,
+.card-center .card-price{
+  color:white;
+}
+.card-description {
+  font-size: 18px;
+}
+.card i{
+  margin-right: 5px;
+}
+  
+
+/* Estilos para la sección 5 */
+.section-5 {
+    text-align: center;
+
+  }
+  
+.section-5 .text-center{
+  margin-top:5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .icon-container div {
+    text-align: center;
+    width: 33.33%;
+    margin: 0 10px;
+  }
+  
+  .icon-container i {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  @media only screen and (max-width: 768px) and (orientation: portrait){
+    .section-1{
+      background-image: url('imagenes/1.png');
+    }
+    .section-1 h1{
+      font-size: 33px;
+    }
+    .text{
+      margin-top:178px
+    }
+    .section-2{
+      flex-direction: column;
+      background-image: url('imagenes/2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .section-2-right{
+      order:1;
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 90px;
+    }
+    .section-2-left{
+      order:2;
+      width: 100%;
+    }
+    
+    .section-2 button{
+      margin-right: 0;
+      font-size: 20px;
+      width: 80%;
+    }
+    .section-2 h1{
+      margin-bottom: 20%;
+      font-size: 25px;
+    }
+
+    .section-3{
+      background-image: url('imagenes/3.png');
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .section-3 .right,
+    .section-3 .left{
+      width: 100%;
+    }
+    .section-3-button{
+      display:none;
+    }
+    .section-3-button2{
+      display:block;
+      order:3;
+      font-size: 20px;
+      width: 80%;
+      margin-bottom: 100px;
+    }
+    .section-3 .right{
+     order:1;
+    }
+    .section-3 .left{
+      order:2
+    }
+    .section-3 h1{
+      margin:0;
+      font-size: 24px;
+    }
+
+    .section-4 h1{
+      font-size: 34px;
+    }
+    .section-4 p{
+      width: 95%;
+      font-size: 20px;
+    }
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .card {
+      display: none;
+      width: 95%;
+    }
+  
+    .card.active {
+      display: block;
+    }
+    .section-5 h1{
+    font-size: 30px;
+    margin-left:4%;
+    margin-right: 4%;
+    }
   }
