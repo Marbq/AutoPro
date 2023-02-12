@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+ * {
+	 box-sizing: border-box;
+}
+ body {
+	 background-image: linear-gradient(to right, #034378, #2d4e68);
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+	 height: 100vh;
+	 font-family: 'Open Sans', sans-serif;
+}
+ a {
+	 text-decoration: none;
+}
+ .row {
+	 max-width: 900px;
+	 margin: 50px auto 0;
+}
+ .card {
+	 float: left;
+	 width: 50%;
+}
+
+ .card .wrapper {
+	 background-color: #fff;
+	 min-height: 540px;
+	 position: relative;
+	 overflow: hidden;
+	 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+ .card .wrapper:hover .data {
+	 transform: translateY(0);
+}
+ .card .data {
+	 position: absolute;
+	 bottom: 55px;
+	 width: 100%;
+	 transform: translateY(calc(70px + 1em));
+	 transition: transform 0.3s;
+}
+ .card .author {
+	 font-size: 40px;
+   font-weight: bold;
+   background-color: #DCC333;
+   color:#1C3155;
+   
+}
+ .card .text {
+	 height: 70px;
+	 margin: 0;
+   background-color:#1C3155;
+   opacity:85%;
+   margin:5px;
+}
+ .card input[type='checkbox'] {
+	 display: none;
+}
+
+
+ .example-2 .wrapper {
+  background: url('img/B2.jpg') center / cover no-repeat;
+}
+
+ .example-2 .data {
+	 color: #fff;
+	 transform: translateY(calc(70px + 4em));
+}
+ .example-2 .title a {
+	 color: #fff;
+}

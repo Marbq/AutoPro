@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+*{
+    font-family: 'League Spartan', sans-serif;
+}
+.col-6{
+    margin:0;
+    padding:0;
+}
+#informacion_inicial{
+    background-image: url('img/manchaAzul.jpg');
+}
+
+h1{
+    font-size:35px;
+    padding-top:10rem;
+    margin-right:30px;
+}
+#mancha-azul{
+    width:20px;
+    height:20px;
+}
+span{
+    color:#DCC333;
+}
+
+#permiso>img{
+    width:500px;
+    height:300px;
+}
+
+.card {
+    float: left;
+    max-width: 900px;
+    margin:70px;
+    margin-top: 16rem;
+    width:25rem;
+    
+}
+
+.card .wrapper {
+    background-color: #fff;
+    min-height: 540px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.card .wrapper:hover .data {
+    transform: translateY(0);
+}
+.card .data {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    transform: translateY(calc(70px + 1em));
+    transition: transform 0.3s;
+}
+.card .author {
+    font-size: 40px;
+  font-weight: bold;
+  background-color: #DCC333;
+  color:#1C3155;
+  padding:5px;
+}
+.card .text {
+    margin: 0;
+  background-color:#1C3155;
+  opacity:85%;
+  font-size:25px;
+}
+.card input[type='checkbox'] {
+    display: none;
+}
+
+
+#b{
+ background: url('img/B2.jpg') center / cover no-repeat;
+}
+
+#am {
+    background: url('img/AM.jpg') center / cover no-repeat;
+   }
+.example-2 .data{
+    color: #fff;
+    transform: translateY(calc(225px + 4em));
+}
+
+
+#permisos_2{
+    background-image: url('img/manchaDorada.jpg');
+}
