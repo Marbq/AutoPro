@@ -38,6 +38,7 @@
     left: 30%;
     transform: translateY(50px) translateX(-50%);
   }
+
   #carousel img:hover {
     cursor: pointer;
   }
