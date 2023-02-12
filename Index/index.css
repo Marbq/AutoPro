@@ -1,216 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap%27');
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    font-family: 'League Spartan' !important;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-family: "League Spartan" !important;
+}
 
-  .section-1 {
-    background-image: url('imagenes/carretera.png');
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: start;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    top: 20px;
-    left: 0;
-  }
-  nav a {
-    color: #333;
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  .section {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-
-
-  .text {
-    width: 750px;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    margin-top:300px;
-  }
-  h1 {
-    font-size: 3vw;
-    color: #333;
-  }
- 
-
-  .section-2 {
-    display: flex;
-    background-image: url('imagenes/manchaAzul.jpg');
-    background-size: cover;
-  }
-  
-  .section-2-left {
-    width: 50%;
-    text-align: center;
-    margin-bottom: 10%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 2vw;
-  }
-
-  .center-button i{
-    margin-left: 3%;
-  }
-  .section-2-right {
-    width: 48%;
-  }
-  
-  .center-button {
-    width: 60%;
-    padding: 20px 20px ;
-    border: none;
-    border-radius: 5px;
-    background-color: #d5b92d;
-    color:white;
-    margin-right: 20%;
-  }
-  
-  .center-img {
-    display: block;
-    margin: 60px auto;
-    width: 90%;
-  }
-  
-.text-center{
-    margin-top:10%;
+.logo {
+  width: 70px;
 }
 
 
+.navbar a {
+  font-weight: bold;
+}
 
 
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
 
-  .section-3 {
-    display: flex;
-    justify-content: center;
 
-    background-color: #fff;
-    background-image: url('imagenes/manchaDorada.jpg');
-    background-size: cover;
-  }
-  
-  .section-3 .left {
-    width: 50%;
-    text-align: center;
-  }
-  
-  .section-3 .left img {
-    width: 100%;
-    padding: 10%;
-  }
-  
-  .section-3 .right {
-    width: 50%;
-    text-align: center;
-  }
-  
-  .section-3 .right .section-3-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  .section-3-button2,
-  .section-3 .right .section-3-button {
-    color: #fff;
-    width: 73%;
-    padding: 20px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #1c3144;
-    margin-top:20%;
-    font-size: 2vw;
-  }
-  .section-3 h1{
-    margin-top: 25%;
-    margin-right: 30%;
-  }
- .section-3 i{
-  margin-left:4%;
- }
- .section-3-button2{
+.section-1 {
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-image: url("imagenes/carretera1.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+}
+.logo {
+  width: 70px;
+}
+
+
+.navbar a {
+  font-weight: bold;
+}
+
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+/* nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+} */
+span{
+  color:#d5b92d;
+}
+.text {
+  width: 69%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+}
+.section-1 h1{
+  font-size: 7vw;
+}
+h1 {
+  font-size: 3vw;
+  color: #333;
+}.logo {
+  width: 70px;
+}
+
+
+.navbar a {
+  font-weight: bold;
+}
+
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+
+.section-2 {
+  display: flex;
+  background-image: url("imagenes/manchaAzul.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-weight: bold;
+}
+
+.section-2-left {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2vw;
+}
+
+.center-button i {
+  margin-left: 3%;
+}
+.section-2-right {
+  width: 48%;
+}
+
+.center-button {
+  width: 60%;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d5b92d;
+  color: white;
+  margin-right: 20%;
+}
+
+.center-img {
+  display: block;
+  margin: 60px auto;
+  width: 90%;
+}
+
+.text-center {
+  margin-top: 10%;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: center;
+
+  background-color: #fff;
+  background-image: url("imagenes/manchaDorada.jpg");
+  background-size: cover;
+}
+
+.section-3 .left {
+  width: 50%;
+  text-align: center;
+}
+
+.section-3 .left img {
+  width: 100%;
+  padding: 10%;
+}
+
+.section-3 .right {
+  width: 50%;
+  text-align: center;
+}
+
+.section-3 .right .section-3-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.section-3-button2,
+.section-3 .right .section-3-button {
+  color: #fff;
+  width: 73%;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1c3144;
+  margin-top: 20%;
+  font-size: 2vw;
+}
+.section-3 h1 {
+  margin-top: 25%;
+  margin-right: 30%;
+}
+.section-3 i {
+  margin-left: 4%;
+}
+.section-3-button2 {
   display: none;
- }
-
-li{
-  list-style: none;
-  padding:0 5px;
 }
 
-  .section-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f5f5f5;
+li {
+  list-style: none;
+  padding: 0 5px;
+}
 
-    justify-content: center;
-  }
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
 
-  
-  .section-title {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 20px;
-  }
-  .section-4 h1{
-    color: #333;
-  }
-  .section-text {
-    font-size: 3rem;
-    text-align: center;
-    width: 50%;
-    margin: 20px 0;
-  }
-  
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .card {
-    width: 40%;
-    height: 700px;
-    background-color: white;
+  justify-content: center;
+}
 
-    text-align: center;
-  }
-  
-  .card button{
-    width: 70%;
-    height: 50px;
-    border:1px solid #d5b92d;
-    background-color: transparent;
-    font-size: 3rem;
-    margin-top:20%;
-  }
+.section-title {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+.section-4 h1 {
+  color: #333;
+}
+.section-text {
+  font-size: 2vw;
+  text-align: center;
+  width: 60%;
+  margin: 20px 0;
+}
 
-  .card-center button{
-    border:1px solid white;
+.cards-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
-    color:white;
-  }
-.card-center{
+.card {
+  width: 40%;
+  height: 550px;
+  background-color: white;
+  padding:20px;
+  text-align: center;
+}
+
+.card button {
+  width: 70%;
+  height: 50px;
+  border: 1px solid #d5b92d;
+  background-color: transparent;
+  font-size: 3rem;
+  margin-top: 20%;
+}
+
+.card-center button {
+  border: 1px solid white;
+
+  color: white;
+}
+.card-center {
   background-color: #d5b92d;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -221,144 +265,143 @@ li{
 }
 
 .card-price {
-  color:#d5b92d;
+  color: #d5b92d;
   font-size: 4rem;
   margin-bottom: 20px;
-  
 }
 .card-center li,
-.card-center .card-price{
-  color:white;
+.card-center .card-price {
+  color: white;
 }
 .card-description {
   font-size: 18px;
 }
-.card i{
+.card i {
   margin-right: 5px;
 }
-  
 
 /* Estilos para la sección 5 */
 .section-5 {
-    text-align: center;
+  text-align: center;
+}
 
-  }
-  
-.section-5 .text-center{
-  margin-top:5%;
+.section-5 .text-center {
+  margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
 }
-  
-  .icon-container {
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.icon-container div {
+  text-align: center;
+  width: 33.33%;
+  margin: 0 10px;
+}
+
+.icon-container i {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .section-1 {
+    background-image: url("imagenes/1.png");
+    background-size: cover;
+  }
+
+  .text {
+    margin-top: 178px;
+  }
+  .section-2 {
+    flex-direction: column;
+    background-image: url("imagenes/2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .section-2-right {
+    order: 1;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 90px;
+  }
+  .section-2-left {
+    order: 2;
+    width: 100%;
+  }
+
+  .section-2 button {
+    margin-right: 0;
+    font-size: 20px;
+    width: 80%;
+  }
+  .section-2 h1 {
+    margin-bottom: 20%;
+    font-size: 25px;
+  }
+
+  .section-3 {
+    background-image: url("imagenes/3.png");
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
   }
-  
-  .icon-container div {
-    text-align: center;
-    width: 33.33%;
-    margin: 0 10px;
+  .section-3 .right,
+  .section-3 .left {
+    width: 100%;
   }
-  
-  .icon-container i {
-    font-size: 48px;
-    color: #333;
-    margin-bottom: 10px;
+  .section-3-button {
+    display: none;
   }
-  
-  @media only screen and (max-width: 768px) and (orientation: portrait){
-    .section-1{
-      background-image: url('imagenes/1.png');
-    }
-    .section-1 h1{
-      font-size: 33px;
-    }
-    .text{
-      margin-top:178px
-    }
-    .section-2{
-      flex-direction: column;
-      background-image: url('imagenes/2.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-    .section-2-right{
-      order:1;
-      width: 90%;
-      margin-left: 5%;
-      margin-bottom: 90px;
-    }
-    .section-2-left{
-      order:2;
-      width: 100%;
-    }
-    
-    .section-2 button{
-      margin-right: 0;
-      font-size: 20px;
-      width: 80%;
-    }
-    .section-2 h1{
-      margin-bottom: 20%;
-      font-size: 25px;
-    }
+  .section-3-button2 {
+    display: block;
+    order: 3;
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 100px;
+  }
+  .section-3 .right {
+    order: 1;
+  }
+  .section-3 .left {
+    order: 2;
+  }
+  .section-3 h1 {
+    margin: 0;
+    font-size: 24px;
+  }
 
-    .section-3{
-      background-image: url('imagenes/3.png');
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .section-3 .right,
-    .section-3 .left{
-      width: 100%;
-    }
-    .section-3-button{
-      display:none;
-    }
-    .section-3-button2{
-      display:block;
-      order:3;
-      font-size: 20px;
-      width: 80%;
-      margin-bottom: 100px;
-    }
-    .section-3 .right{
-     order:1;
-    }
-    .section-3 .left{
-      order:2
-    }
-    .section-3 h1{
-      margin:0;
-      font-size: 24px;
-    }
+  .section-4 h1 {
+    font-size: 34px;
+  }
+  .section-4 p {
+    width: 95%;
+    font-size: 20px;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .section-4 h1{
-      font-size: 34px;
-    }
-    .section-4 p{
-      width: 95%;
-      font-size: 20px;
-    }
-    .cards-container {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .card {
-      display: none;
-      width: 95%;
-    }
-  
-    .card.active {
-      display: block;
-    }
-    .section-5 h1{
+  .card {
+    display: none;
+    width: 95%;
+  }
+
+  .card.active {
+    display: block;
+  }
+  .section-5 h1 {
     font-size: 30px;
-    margin-left:4%;
+    margin-left: 4%;
     margin-right: 4%;
-    }
   }
+}
