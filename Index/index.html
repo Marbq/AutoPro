@@ -114,11 +114,11 @@
         increíbles que no podrás encontrar en ningún otro lugar. ¡No pierdas
         esta oportunidad y reserva tu curso hoy mismo!
       </p>
-      <div class="cards-container">
-        <div class="card card-outside">
-          <h3 class="card-title">CURSO BÁSICO</h3>
-          <p class="card-price">29'99 €</p>
-          <ul class="card-description">
+      <div class="card1s-container">
+        <div class="card1 card1-outside">
+          <h3 class="card1-title">CURSO BÁSICO</h3>
+          <p class="card1-price">29'99 €</p>
+          <ul class="card1-description">
             <li><i class="bi bi-check-circle"></i>5 1-hora por sesión</li>
             <li>
               <i class="bi bi-check-circle"></i>Libre elección de instructor
@@ -132,10 +132,10 @@
           </ul>
           <button>Empezar</button>
         </div>
-        <div class="card card-center">
-          <h3 class="card-title">CURSO AVANZADO</h3>
-          <p class="card-price">79'99 €</p>
-          <ul class="card-description">
+        <div class="card1 card1-center">
+          <h3 class="card1-title">CURSO AVANZADO</h3>
+          <p class="card1-price">79'99 €</p>
+          <ul class="card1-description">
             <li><i class="bi bi-check-circle"></i>5 1-hora por sesión</li>
             <li>
               <i class="bi bi-check-circle"></i>Libre elección de instructor
@@ -149,10 +149,10 @@
           </ul>
           <button>Empezar</button>
         </div>
-        <div class="card card-outside">
-          <h3 class="card-title">CURSO INTERMEDIO</h3>
-          <p class="card-price">49'99 €</p>
-          <ul class="card-description">
+        <div class="card1 card1-outside">
+          <h3 class="card1-title">CURSO INTERMEDIO</h3>
+          <p class="card1-price">49'99 €</p>
+          <ul class="card1-description">
             <li><i class="bi bi-check-circle"></i>5 1-hora por sesión</li>
             <li>
               <i class="bi bi-check-circle"></i>Libre elección de instructor
@@ -233,7 +233,7 @@
           
           <!-- <i class="fas fa-trophy"></i> -->
           <p>
-            <span>450</span><br />
+            <span>450+</span><br />
             clientes satisfechos a nivel nacional
           </p>
         </div>
@@ -274,18 +274,18 @@
     </footer>
 
     <script>
-      const cards = document.querySelectorAll(".card");
-      let currentCard = 0;
+      const card1s = document.querySelectorAll(".card1");
+      let currentCard1 = 0;
 
-      cards[currentCard].classList.add("active");
+      card1s[currentCard1].classList.add("active");
 
-      function nextCard() {
-        cards[currentCard].classList.remove("active");
-        currentCard = (currentCard + 1) % cards.length;
-        cards[currentCard].classList.add("active");
+      function nextCard1() {
+        card1s[currentCard1].classList.remove("active");
+        currentCard1 = (currentCard1 + 1) % card1s.length;
+        card1s[currentCard1].classList.add("active");
       }
 
-      setInterval(nextCard, 3000);
+      setInterval(nextCard1, 3000);
     </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="carrousel.js"></script>
