@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap%27');
 
 body {
-  width  : 100%;
-  height : 100%;
-  margin : 0;
-  padding: 0;
+  width      : 100%;
+  height     : 100%;
+  margin     : 0;
+  padding    : 0;
+  font-weight: bold;
 }
 
 .logo {
   margin-left: 10px;
   width      : 70px;
 }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
 
 .navbar a {
   font-weight: bold;
@@ -27,43 +34,40 @@ section {
   margin   : 0 auto;
 }
 
-
-.text--style {
-  color: #1C3144;
-  width          : 100%;
-  height         : 100%;
-  max-width      : 375px;
-  justify-content: center;
-  padding-left   : 30px;
-  padding-right  : 30px;
+.text-title {
+  width: 90%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 5%;
 }
 
-.hrClass {
-  color         : #D5B92D;
-  margin-bottom : 40px;
-  padding-top   : 10px;
-  padding-bottom: 10px;
+.colorSpan {
+  font-weight: bold;
+  color: #D5B92D;
 }
 
 .text--center {
-  height      : 30px;
-  margin-top  : -20px;
-  color       : #1C3144;
-  margin-left : 10px;
-  margin-right: 10px;
-  padding-top : 4px;
-  border-radius: 15px;
+  height          : 60px;
+  margin-top      : -20px;
+  color           : #fff;
+  margin-left     : 10px;
+  margin-right    : 10px;
+  padding-top     : 15px;
+  padding-bottom  : 10px;
+  border-radius   : 15px;
   background-color: #D5B92D;
 }
 
 .text--center-c {
-  width           : 100%;
-  margin-top      : 5%;
-  margin-left     : 5%;
-  padding-top     : 5px;
-  margin-right    : 5%;
-  color           : #1C3144;
-  
+  width       : 100%;
+  margin-top  : 5%;
+  margin-left : 5%;
+  padding-top : 5px;
+  margin-right: 5%;
+  color       : #1C3144;
+
 }
 
 .text--class {
@@ -101,6 +105,12 @@ section {
   border-radius: 10%;
 }
 
+.text--style {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
 /* CSS used in JS */
 
 .slider__background--front {
@@ -113,7 +123,7 @@ section {
   top             : 48px;
   transform-origin: right;
   transform       : scaleX(1);
-  border-radius: 15px;
+  border-radius   : 15px;
 }
 
 @keyframes slideInAndOut {
@@ -192,54 +202,67 @@ section {
   font-weight: bold;
 }
 
-.side--section {
-  display: none;
-}
-
 .form--details {
-  font-family: 'League Spartan', sans-serif;
-  width      : 100%;
-  height     : 420px;
-  margin-left: 15px;
+  width: 100%;
+  margin-left: -1px;
 }
 
-input {
-  width           : 90%;
-  height          : 40px;
-  border-radius   : 10px;
-  border-style    : solid;
-  padding-left    : 15px;
-  color           : #1C3144;
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
 textarea {
-  width           : 90%;
-  height          : 100px;
-  border-radius   : 10px;
-  border-style    : solid;
-  padding-left    : 15px;
-  color           : #1C3144;
-  resize          : none;
+  width        : 100%;
+  border       : none;
+  border-bottom: 2px solid;
+  outline      : none;
+  padding      : 3px;
+  resize       : none;
+  font-size    : 1rem;
+  margin-top   : 0.5rem;
 }
 
 label {
-  margin-left: 15px;
-  float      : center;
+  position      : absolute;
+  top           : 0;
+  left          : 0;
+  font-size     : 1rem;
+  color         : #999;
+  pointer-events: none;
+  transition    : 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-bottom: 2px solid #D5B92D;
+}
+
+input[type="text"]:focus ~ label,
+input[type="email"]:focus ~ label,
+input[type="tel"]:focus ~ label,
+textarea:focus ~ label {
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
 .buttonForm {
-  width           : 50%;
-  height          : 30px;
-  margin-top      : 10px;
+  width           : 100%;
+  height          : 40px;
   background-color: #1C3144;
-  border-style    : solid;
-  border-radius   : 10px;
+  color           : white;
+  border          : none;
+  padding-top     : 10px;
+  padding-bottom  : 10px;
+  border-radius   : 5px;
   cursor          : pointer;
-  color           : #fff;
-}
-
-span {
-  color: #ab4493;
 }
 
 ::-webkit-input-placeholder {
@@ -270,27 +293,18 @@ span {
   .nav-item {
     font-size: 1.2em;
   }
-
   .text--style {
-    display: none;
-}
-
-  .hrClass {
-    width : 1px;
-    height: 500px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 80%;
+    padding-left   : 10%;
+    padding-top    : 10%;
   }
 
   .hero {
     margin-top: 10%;
     height    : 420px;
-  }
-
-  .side--section {
-    display      : flex;
-    text-align: end;
-    justify-content: center;
-    height       : 420px;
-    border-radius: 10%;
   }
 
   .side--section--b {
@@ -303,17 +317,6 @@ span {
 
   .text {
     display: none;
-  }
-
-  i {
-    color: #D5B92D;
-  }
-
-  ;
-
-  .slider__details--name {
-    font-size  : 32px;
-    font-weight: bold;
   }
 
   .text--class {
@@ -329,19 +332,35 @@ span {
     margin-left: -1px;
   }
 
-  input {
-    width: 100%;
-  }
-
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
   textarea {
     width        : 100%;
-    height       : 100px;
-    padding-right: 5px;
+    border       : none;
+    border-bottom: 2px solid;
+    outline      : none;
+    padding      : 3px;
     resize       : none;
   }
 
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    border-bottom: 2px solid #D5B92D;
+  }
+
   .buttonForm {
-    width: 100%;
+    width           : 100%;
+    height          : 40px;
+    background-color: #1C3144;
+    color           : white;
+    border          : none;
+    padding-top     : 10px;
+    padding-bottom  : 10px;
+    border-radius   : 5px;
+    cursor          : pointer;
   }
 }
 
@@ -365,15 +384,12 @@ span {
   }
 
   .text--style {
-    display: flex;
-    align-items: center;
-    width     : 100%;
-    text-align: center;
-  }
-
-  .hrClass {
-    width : 1px;
-    height: 600px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 80%;
+    padding-left   : 10%;
+    padding-top    : 10%;
   }
 
   .hero {
@@ -381,10 +397,6 @@ span {
   }
 
   .hero--center {
-    width: 100%;
-  }
-
-  .side--section {
     width: 100%;
   }
 
@@ -408,30 +420,39 @@ span {
     height: 500px;
   }
 
-  .text--center-c {
-    width     : 100%;
-    margin-top: 3%;
-    background-color: #D5B92D;
-    border-radius: 20px;
-  }
-
   .form--details {
     width      : 100%;
     margin-left: -1px;
   }
 
-  input {
-    width: 100%;
-  }
-
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
   textarea {
     width        : 100%;
-    height       : 100px;
-    padding-right: 5px;
+    border       : none;
+    border-bottom: 2px solid;
+    outline      : none;
+    padding      : 3px;
     resize       : none;
   }
 
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    border-bottom: 2px solid #D5B92D;
+  }
+
   .buttonForm {
-    width: 100%;
+    width           : 100%;
+    height          : 40px;
+    background-color: #1C3144;
+    color           : white;
+    border          : none;
+    padding-top     : 10px;
+    padding-bottom  : 10px;
+    border-radius   : 5px;
+    cursor          : pointer;
   }
 }
