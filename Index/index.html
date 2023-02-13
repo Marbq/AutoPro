@@ -39,6 +39,20 @@
       href="https://fonts.googleapis.com/css?family=League Spartan"
       rel="stylesheet"
     />
+    <style>
+      .section-1 {
+        animation: fadeIn 3s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="section-1">
@@ -58,10 +72,14 @@
           <div
             class="d-flex align-items-center mx-auto navbar-nav ms-auto p-4 p-lg-0"
           >
-            <a href="#" class="nav-item nav-link active">Inicio</a>
-            <a href="#" class="nav-item nav-link">Permisos</a>
-            <a href="#" class="nav-item nav-link">Formación</a>
-            <a href="#" class="nav-item nav-link">Sobre nosotros</a>
+            <a href="index.html" class="nav-item nav-link active">Inicio</a>
+            <a href="permisos.html" class="nav-item nav-link">Permisos</a>
+            <a href="subPagFormacion.html" class="nav-item nav-link"
+              >Formación</a
+            >
+            <a href="subPagSobreNosotros.html" class="nav-item nav-link"
+              >Sobre nosotros</a
+            >
           </div>
         </div>
       </nav>
@@ -180,31 +198,31 @@
       <main>
         <div id="carousel" class="carousel">
           <div id="iten_1" class="hideLeft">
-            <img src="imagenes/feliz.png" />
+            <img src="imagenes/cliente-1.jpg" />
           </div>
 
           <div id="item_2" class="prevLeftSecond">
-            <img src="imagenes/cliente2.jpg" />
+            <img src="imagenes/cliente-5.png" />
           </div>
 
           <div id="item_3" class="prev">
-            <img src="imagenes/cliente1.jpg" />
+            <img src="imagenes/cliente-3.jpg" />
           </div>
 
           <div id="item_4" class="selected">
-            <img src="imagenes/cliente2.jpg" />
+            <img src="imagenes/cliente-7.png" />
           </div>
 
           <div id="item_5" class="next">
-            <img src="imagenes/feliz.png" />
+            <img src="imagenes/cliente3.jpg" />
           </div>
 
           <div id="item_6" class="nextRightSecond">
-            <img src="imagenes/cliente2.jpg" />
+            <img src="imagenes/cliente-6.png" />
           </div>
 
           <div id="item_7" class="hideRight">
-            <img src="imagenes/feliz.png" />
+            <img src="imagenes/cliente-2.jpg" />
           </div>
 
           <div id="item_8" class="hideRight">
@@ -250,10 +268,14 @@
       <div class="footer-up">
         <div class="footer-left">
           <img src="imagenes/Logo (1).png" alt="logo" />
-          <p>Lideres en educacion vial con 20 <br> años de experiencia</p>
+          <p>
+            Lideres en educacion vial con 20 <br />
+            años de experiencia
+          </p>
         </div>
         <div class="footer-center">
-          <i class="fa fa-map-marker"></i> Avenida Meza y Lopez , 45 Gran Canaria - España
+          <i class="fa fa-map-marker"></i> Avenida Meza y Lopez , 45 Gran
+          Canaria - España
           <br />
           <i class="fa fa-phone"></i> 920 00 00 00
         </div>
