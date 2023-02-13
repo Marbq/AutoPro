@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+/*Responsive */
+@media only screen and (max-width: 375px)  {
+  .card-principal h3 p{
+    font-size: 6rem;
+  }
+    
+/*Servicios especiales*/
+  .ds-ser-box {
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    border-radius: 10px;
+   
+}
+}
+@media  only screen and (min-width: 376px) and (max-width: 820px) {
+  /*card*/
+  .card-principal h3 {
+    font-size: 30px;
+  }
+
+  /*servicios especiales*/
+  .container {
+    max-width: 95%;
+  }
+  .col-lg-3 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .ds-ser-box {
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    border-radius: 10px;
+   
+}
+}
+
+/* fin responsive*/
+
+body{
+  
+  background-color:white;
+  
+}
+
+/* navbar*/
+
+.logo {
+  width: 70px;
+}
+
+
+.navbar a {
+  font-weight: bold;
+}
+
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+/*cards*/
+.card-principal {
+  font-size:1rem !important ;
+ 
+}
+.card-principal h3 {
+  font-size: 2rem;
+}
+
+
+.card-title {
+  font-weight: bold;
+    color: #ffff;
+    font-size:1rem;
+    background-color: #1C3155;
+}
+
+.container{
+  animation: animacion 1s ease-in-out forwards;
+
+}
+.flex-column {
+  background-color: #DCC333;
+  font-family: 'League Spartan', sans-serif;
+  border: 5px solid #DCC333;
+ 
+}
+
+.bg-light {
+  text-align: center;
+}
+
+
+
+/*servicios especiales */
+.dschool-service-wrapper {
+  background-image: url(carretera.jpg);
+  font-family: 'League Spartan', sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  border: 2px solid #DCC333;
+  margin: 2rem auto;
+
+}
+
+.text-uppercase {
+  background-color: #DCC333;
+  border-radius: 10px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*carousel*/
+
+#carouselExampleFade {
+  width: 80%;
+  margin: 0 auto;
+  animation: animacion 1s ease-in-out forwards;
+ 
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #DCC333;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  
+}
+
+
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  cursor: pointer;
+}
+/*footer*/
+footer{
+  animation: animacion 1s ease-in-out forwards;
+  
+}
+.form--details {
+  font-family: 'League Spartan', sans-serif;
+  width: 100%; 
+  height: 420px;
+  margin-left: 15px;
+ 
+}
+
+input{
+    background-color: #1C3144;
+    width: 90%; 
+    height: 40px; 
+    border-radius: 10px;
+    border-style: solid;
+  padding-left: 15px;
+  color: #D5B92D;
+}
+
+textarea{
+    background-color: #1C3144;
+    width: 90%; 
+    height: 100px; 
+    border-radius: 10px;
+    border-style: solid;
+  padding-left: 15px;
+  color: #D5B92D;
+}
+
+label{
+  margin-left: 15px;
+    float: center;
+}
+
+.buttonForm{
+  width:50%;
+    height: 30px; 
+    margin-top: 10px;
+    background-color: #1C3144; 
+    border-style: solid; 
+    border-radius: 10px;
+  cursor: pointer;
+  color: #D5B92D; 
+}
+/*animacion */
+
+
+.bg-light.pt-5.pb-5.shadow-sm {
+  opacity: 0;
+  animation: animacion 1s ease-in-out forwards;
+}
+
+
+
+@keyframes animacion {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*transicion */
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
