@@ -1,5 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+/*Media queries*/
+@media only screen and (max-width: 800px) {
+    #informacion_inicial, #permisos_3{
+        flex-direction: column;
+        background-image: url("img/2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #permisos_2, #permisos_4{
+        background-image: url('img/manchaDorada.jpg');
+        background-size: 100% 100%;
+    }
+}
+/*General*/
 *{
     font-family: 'League Spartan', sans-serif;
     margin:0;
@@ -13,10 +27,27 @@
     margin:0;
     padding:0;
 }
-#informacion_inicial, #permisos_3{
-    background-image: url('img/manchaAzul.jpg');
+/*Nav*/
+.nav-link.active,
+.nav-link:hover{
+  color:#d5b92d !important;
+}
+.logo {
+  width: 70px;
+  margin-left:30px;
 }
 
+.navbar a {
+  font-weight: bold;
+  font-size: 25px;
+}
+/*Titulo*/
+#titulo{
+    font-size: 10rem;
+    color: #333;
+    padding-right:100px;
+    margin:20px;
+}
 h1{
     font-size:35px;
     padding-top:10rem;
@@ -26,6 +57,18 @@ h1{
 span{
     color:#DCC333;
 }
+
+/*Body*/
+#informacion_inicial, #permisos_3{
+    background-image: url('img/manchaAzul.jpg');
+    background-size: 100% 100%;
+}
+#permisos_2, #permisos_4{
+    background-image: url('img/manchaDorada.jpg');
+    background-size: 100% 100%;
+}
+
+/*Permisos*/
 
 #permiso>img{
     width:500px;
@@ -55,7 +98,6 @@ span{
     position: absolute;
     bottom: 100px;
     width: 100%;
-    transform: translateY(calc(70px + 1em));
     transition: transform 0.3s;
 }
 .card .author {
@@ -66,9 +108,10 @@ span{
   padding:5px;
 }
 .card .text {
-    margin: 0;
+margin: 0;
   background-color:#1C3155;
   opacity:85%;
+  padding: 5px;
   font-size:25px;
 }
 .card input[type='checkbox'] {
@@ -110,7 +153,106 @@ span{
     transform: translateY(calc(225px + 4em));
 }
 
+/*Media queries*/
+@media only screen and (max-width: 800px) {
+    #informacion_inicial, #permisos_3{
+        background-image: url("img/2.png");
+        background-repeat: no-repeat;
+    }
+    #permisos_2, #permisos_4{
+        background-image: url("img/3.png");
+        background-repeat: no-repeat;
+    }
+    
+    .card {
+        margin:0;
+        margin-top: 0;
+        
+    }
+    h1{
+        padding-top:20px;
+    }
+    #titulo{
+        padding:0;
+    }
+    .text-end{
+        text-align: center!important;
+    }
 
-#permisos_2, #permisos_4{
-    background-image: url('img/manchaDorada.jpg');
+}
+
+@media only screen and (max-width: 500px) {
+    #informacion_inicial, #permisos_3,#permisos_2, #permisos_4{
+        background-image: url("");
+    }
+    
+    #titulo{
+        font-size:53px;
+    }
+
+    h1{
+        font-size:25px;
+        padding:10px;
+    }
+    #informacion_inicial{
+        justify-content:center;
+    }
+    .text-end{
+        text-align: center!important;
+    }
+    .card{
+        padding:10px;
+    }
+
+    .justify-content-end{
+        justify-content: left!important;
+    }
+    
+    .col-6{
+        width:98%!important;
+    }
+    
+
+    .text{
+        font-size:23px !important;
+    }
+
+    #b .text{
+        font-size:25px!important;
+    }
+
+    
+
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    #c_e .text, #a .text{
+        font-size:21.5px!important;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    #b .text{
+        font-size:21.2px !important;
+    }
+    .text{
+        font-size:21px!important;
+    }
+
+    #a .text{
+        font-size:18.2px !important;
+    }
+     #c_e .text{
+        font-size:19.5px !important;
+     }
+    #a1 .text{
+        font-size:21.5px !important;
+    }
+
+
+
 }
