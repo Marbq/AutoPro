@@ -9,7 +9,7 @@ body {
 }
 
 .section1 {
-  background-image : url(./img/fondoMovil.png);
+  background-image : url(./img/fondo-Movil.png);
   background-repeat: no-repeat;
   background-size  : cover;
 }
@@ -365,9 +365,6 @@ footer {
   margin   : 0 10px;
 }
 
-
-/* Tablets (min-width: 800px) */
-/* @import url(css-mediaQuery-Tablet.css); */
 /* Tablets (min-width: 800px) */
 @media (min-width: 800px) {
   .navbar {
@@ -383,7 +380,7 @@ footer {
   }
 
   .section1 {
-    background-image : url(./img/fondoMovil.png);
+    background-image : url(./img/fondo-Movil.png);
     background-repeat: no-repeat;
     background-size  : cover;
   }
@@ -465,7 +462,6 @@ footer {
 }
 
 /* Desktops (min-width: 992px) */
-/* @import url(css-mediaQuery-Web.css); */
 @media (min-width: 992px) {
   .navbar {
     padding: 40px 0;
@@ -619,7 +615,6 @@ footer {
     text-align   : justify;
     margin-bottom: 1cm;
   }
-
 
   .footer-left, .footer-bottom {
     display: none;
