@@ -257,6 +257,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
   border-bottom: 2px solid #D5B92D;
+  resize       : none;
 }
 
 input[type="text"]:focus~label,
@@ -265,6 +266,7 @@ input[type="tel"]:focus~label,
 textarea:focus~label {
   opacity   : 0;
   transition: opacity 0.2s ease;
+  resize       : none;
 }
 
 .buttonForm {
@@ -286,6 +288,7 @@ textarea:focus~label {
 
 ::-webkit-textarea-placeholder {
   color: #a8a8a8;
+  resize       : none;
 }
 
 .h3,
@@ -323,10 +326,6 @@ footer {
 .footer-right,
 .footer-center {
   display: none;
-}
-
-.footer-center {
-  margin: 0px 10px;
 }
 
 .footer-bottom {
@@ -367,12 +366,8 @@ footer {
   }
 
   .text--style {
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    width          : 80%;
-    padding-left   : 10%;
-    padding-top    : 10%;
+    display        : block;
+    width          : 100%;
   }
 
   .hero {
@@ -422,6 +417,7 @@ footer {
   input[type="tel"]:focus,
   textarea:focus {
     border-bottom: 2px solid #D5B92D;
+    resize       : none;
   }
 
   .buttonForm {
@@ -436,6 +432,10 @@ footer {
     cursor          : pointer;
   }
 
+  .footer-right,
+  .footer-center {
+    display: block;
+  }
 
 
 }
@@ -535,11 +535,7 @@ footer {
 
   .footer-right,
   .footer-center {
-    margin-bottom: 20px;
-  }
-
-  .footer-center {
-    margin: 0px 10px;
+    display: block;
   }
 
 
