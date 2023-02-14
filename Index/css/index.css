@@ -480,16 +480,32 @@ footer {
 }
 
 @media print {
-  section{
+  .section-2, .section-3, .section-4, .section-5{
     background: #fff !important;
     height: 100vh !important;
     page-break-after: always !important;
-
   }
-  nav, footer{
+  .section-1{
+    background: #fff !important;
+    height: 100vh !important;
+  }
+  nav, footer, .section-2-left{
     display:none !important;
   }
   button{
     display: none !important;
+  }
+  
+ 
+}
+
+@media print and (orientation: landscape){
+  .section-2-right{
+    width: 100%;
+    
+  }
+  .center-img{
+    width: 50%;
+    margin-left: 25%;
   }
 }
