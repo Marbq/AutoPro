@@ -31,7 +31,7 @@ const $$ = str => document.querySelectorAll(str);
             if (typeof el === "string") {
            /*  console.log(`got string: ${el}`); */
                 selected = (el == "next") ? $(".selected").nextElementSibling : $(".selected").previousElementSibling;
-                console.dir(selected);
+                /* console.dir(selected); */
             }
 
             let curpos = parseInt(app.selected.dataset.pos);

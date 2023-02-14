@@ -7,12 +7,12 @@
   font-family: "League Spartan";
 }
 .nav-link.active,
-.nav-link:hover{
-  color:#d5b92d !important;
+.nav-link:hover {
+  color: #d5b92d !important;
 }
 .logo {
   width: 70px;
-  margin-left:30px;
+  margin-left: 30px;
 }
 
 .navbar a {
@@ -21,10 +21,9 @@
 }
 
 .section-1 {
-  background-size: contain;
   background-repeat: no-repeat;
-
-  background-image: url("imagenes/carretera1.png");
+  background-position: center;
+  background-image: url("../imagenes/carretera1.png");
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -53,7 +52,7 @@ h1 {
 
 .section-2 {
   display: flex;
-  background-image: url("imagenes/manchaAzul.jpg");
+  background-image: url("../imagenes/manchaAzul.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   font-weight: bold;
@@ -87,8 +86,7 @@ h1 {
   background-color: #d5b92d;
   color: white;
   margin-right: 20%;
-    text-decoration: none;
-
+  text-decoration: none;
 }
 
 .center-img {
@@ -109,7 +107,7 @@ h1 {
   justify-content: center;
 
   background-color: #fff;
-  background-image: url("imagenes/manchaDorada.jpg");
+  background-image: url("../imagenes/manchaDorada.jpg");
   background-size: cover;
 }
 
@@ -288,13 +286,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top:2px solid #1c3144;
+  border-top: 2px solid #1c3144;
 }
-.footer-up{
-  display:flex;
+.footer-up {
+  display: flex;
   width: 100%;
   justify-content: space-around;
-  padding-top:20px;
+  padding-top: 20px;
 }
 
 .footer-left {
@@ -312,29 +310,30 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-center{
-  margin:0px 10px;
+.footer-center {
+  margin: 0px 10px;
 }
 
 .footer-bottom {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  
 }
-.footer-bottom-copyrights{
+.footer-bottom-copyrights {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #1c3144;
   color: #fff;
   width: 100%;
-  padding:20px 0;
+  padding: 20px 0;
 }
 .footer-bottom i {
   font-size: 40px;
   margin: 0 10px;
 }
+
+/* PARA PATALLA MENOR A 700px VERTICALMENTE */
 @media only screen and (max-height: 700px) {
   .section-1 h1 {
     font-size: 4vw;
@@ -344,10 +343,14 @@ footer {
     width: 63%;
   }
 }
-@media only screen and (max-width: 800px) {
+
+/* ESTILOS PARA MÓVILES Y IMPRESION HORIZONTAL */
+@media only screen and (max-width: 800px) ,print and (orientation:portrait){
   .section-1 {
-    background-image: url("imagenes/1.png");
+    background-image: url("../imagenes/1.png");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .text {
@@ -356,7 +359,7 @@ footer {
   }
   .section-2 {
     flex-direction: column;
-    background-image: url("imagenes/2.png");
+    background-image: url("../imagenes/2.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -382,7 +385,7 @@ footer {
   }
 
   .section-3 {
-    background-image: url("imagenes/3.png");
+    background-image: url("../imagenes/3.png");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -455,22 +458,38 @@ footer {
     margin-left: 5%;
   }
   .footer-right,
-  .footer-center{
-    display:none;
+  .footer-center {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1023px) {
   /* estilos para tabletas */
   .section-1 {
-    background: url(imagenes/tabletIndex.png);
+    background: url("../imagenes/tabletIndex.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
   .icon-container div p {
     width: 60%;
   }
-  .center-button{
+  .center-button {
     margin-bottom: 10%;
+  }
+}
+
+@media print {
+  section{
+    background: #fff !important;
+    height: 100vh !important;
+    page-break-after: always !important;
+
+  }
+  nav, footer{
+    display:none !important;
+  }
+  button{
+    display: none !important;
   }
 }
