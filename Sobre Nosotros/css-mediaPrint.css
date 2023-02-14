@@ -1,0 +1,22 @@
+@media print {
+    .col-auto {
+      padding: 0;
+    }
+    .text--style {
+        display: none;
+      /* display: block;
+      text-align: left;
+      margin: 0;
+      padding: 0; */
+    }
+    .slider {
+        display: hidden;
+    }
+    .colorSpan {
+      color: inherit;
+      background-color: transparent;
+    }
+    h4 {
+      font-size: 1em;
+    }
+  }
