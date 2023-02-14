@@ -32,6 +32,10 @@ body{
 }
 .card-principal h3 {
   font-size: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+ font-family: 'League Spartan', sans-serif;
 }
 
 
@@ -40,6 +44,7 @@ body{
     color: #ffff;
     font-size:1.5rem;
     background-color: #1C3155;
+    
 }
 
 .container{
@@ -77,11 +82,17 @@ body{
 
 
 .text-uppercase {
+  font-family: 'League Spartan', sans-serif ;
   background-color: #DCC333;
   border-radius: 10px;
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'League Spartan', sans-serif;
 }
 
 /*carousel*/
@@ -93,11 +104,13 @@ body{
  
 }
 
-.text-center.mt-3.mb-3 {
+.text-uppercase.mt-3.mb-3 {
   background-color: #D5B92D;
   font-weight: bold;
   font-family: 'League Spartan', sans-serif;
   color:black;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .carousel-item img {
@@ -125,61 +138,61 @@ body{
 /*footer*/
 footer{
  
-    margin-top  : 5%;
-    display       : flex;
-    flex-direction: column;
-    align-items   : center;
-    border-top    : 2px solid #1c3144;
-    animation: animacion 1s ease-in-out forwards;
+    margin-top:5%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-top:2px solid #1c3144;
+    animation:animacion 1s ease-in-out forwards;
   }
   
   .footer-up {
-    display  : flex;
-    width: 100%;
-    justify-content: space-around;
-    padding-top    : 20px;
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+    padding-top:20px;
   }
   
   .footer-left {
-    display      : flex;
-    align-items  : center;
-    margin-bottom: 20px;
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
   }
   
   .footer-left img {
-    height      : 50px;
-    margin-right: 20px;
+    height:50px;
+    margin-right:20px;
   }
   
   .footer-right,
   .footer-center {
-    display: none;
+    display:none;
   }
   
   .footer-center {
-    margin: 0px 10px;
+    margin:0px 10px;
   }
   
   .footer-bottom {
-    display        : flex;
-    justify-content: center;
-    margin-top     : 20px;
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
   
   }
   
   .footer-bottom-copyrights {
-    display         : flex;
-    flex-direction  : column;
-    align-items     : center;
-    background-color: #1c3144;
-    color           : #fff;
-    width           : 100%;
-    padding         : 20px 0;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#1c3144;
+    color:#fff;
+    width:100%;
+    padding:20px 0;
   }
   
   .footer-bottom i {
     font-size: 40px;
-    margin   : 0 10px;
+    margin: 0 10px;
   }
 /*animacion */
 
