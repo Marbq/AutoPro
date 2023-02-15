@@ -36,7 +36,8 @@
       href="https://fonts.googleapis.com/css?family=League Spartan"
       rel="stylesheet"
     />
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js" defer></script>
   </head>
   <body>
@@ -70,25 +71,31 @@
       </nav>
       <div class="text">
         <h1>
-          Auto<span>P</span>ro<br />
+          Auto<span data-aos="zoom-in" data-aos-duration="2500">P</span>ro<br />
           Aprende bien, conduce mejor.
         </h1>
       </div>
     </section>
 
-    <section class="section-2">
-      <div class="section-2-left">
-        <button class="center-button">
+    <section class="section-2" >
+      <div class="section-2-left" >
+        <button class="center-button" data-aos="fade-right"
+        data-aos-offset="230"
+        data-aos-duration="1500">
           INSTRUCTORES <i class="bi bi-arrow-right-circle"></i>
         </button>
       </div>
-      <div class="section-2-right">
-        <h1 class="text-center">
+      <div class="section-2-right" >
+        <h1 class="text-center" data-aos="fade-left"
+        data-aos-offset="400"
+        data-aos-duration="1500">
           Nuestros <span>instructores</span> experimentados te guiarán en cada
           paso del proceso para que obtengas tu licencia de manera segura y
           eficiente.
         </h1>
-        <img class="center-img" src="imagenes/Screenshot_5.jpg" alt="Imagen" />
+        <img class="center-img" src="imagenes/Screenshot_5.jpg" alt="Imagen" data-aos="fade-left"
+        data-aos-offset="400"
+        data-aos-duration="1500"/>
       </div>
     </section>
 

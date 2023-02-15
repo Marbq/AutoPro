@@ -20,3 +20,4 @@ document.querySelector(".center-button").addEventListener('click', function(){
     window.location.href = "subPagSobreNosotros.html";
 })
 
+AOS.init();
