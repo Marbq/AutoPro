@@ -32,9 +32,17 @@ body{
 .section1 {
   background-image : url(./imagenes/fondo-Web.png) !important;
   background-repeat: no-repeat !important;
-  background-size  : cover !important;
+  background-size  :  100% 100% !important;
+  
 }
 
+
+.text-title h1{
+  font-size: 8rem;
+  justify-content:center;
+  text-align:center;
+  }
+  
 /*cards*/
 .card-principal {
   font-size:1rem !important ;
@@ -77,7 +85,6 @@ body{
 /*servicios especiales */
 .dschool-service-wrapper {
   font-family: 'League Spartan', sans-serif;
-  background-attachment: fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -85,6 +92,7 @@ body{
   background-size: 100% 100%;
   border: 2px solid #DCC333;
   margin: 2rem auto;
+
 
 
 }
@@ -236,6 +244,13 @@ footer{
 /*Responsive */
 @media (max-width: 375px)  {
 
+ 
+.text-title h1{
+  font-size: 1.5rem;
+  justify-content:center;
+  text-align:center;
+  }
+
 .footer-center, .footer-right {
     display: none !important;
 }
@@ -271,7 +286,7 @@ footer{
 .section1 {
   background-image : url(./imagenes/fondo-Movil.png) !important;
   background-repeat: no-repeat !important;
-  background-size  : cover !important;
+  background-size  :  cover !important;
 }
 .footer-left img {
   height: 50px;
@@ -283,7 +298,20 @@ footer{
 
 
 @media (min-width: 376px) and (max-width: 820px) {
+
   
+.text-title h1{
+  font-size: 3rem;
+  justify-content:center;
+  text-align:center;
+  }
+
+    .section1 {
+      background-image : url(./imagenes/fondo-Web.png) !important;
+      background-repeat: no-repeat !important;
+      background-size  :  100% 100% !important;
+      
+    }
 
   .footer-center, .footer-right {
     display: none !important;
@@ -329,14 +357,23 @@ footer{
   font-weight: bold;
 }
 
-.section1 {
-  background-image : url(./imagenes/fondo-Movil.png) !important;
-  background-repeat: no-repeat !important;
-  background-size  : cover !important;
-}
 
 }
 @media (min-width: 821px) and (max-width: 1440px) {
+
+  
+.text-title h1{
+  font-size: 6rem;
+  justify-content:center;
+  text-align:center;
+  }
+
+  .section1 {
+    background-image : url(./imagenes/fondo-Web.png) !important;
+    background-repeat: no-repeat !important;
+    background-size  :  100% 100% !important;
+    
+  }
 
 .nav-link.active,
 .nav-link:hover {
@@ -379,6 +416,12 @@ footer{
 
 }
 @media  (min-width: 1440px) {
+
+  .text-title h1{
+    font-size: 8rem;
+    justify-content:center;
+    text-align:center;
+    }
 
 .nav-link.active,
 .nav-link:hover {
