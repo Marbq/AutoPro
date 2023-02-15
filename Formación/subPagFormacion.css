@@ -4,6 +4,8 @@
 body{
   
   background-color:white;
+  opacity: 0;
+  animation: animacion 1s ease-in-out forwards;
   
 }
 
@@ -293,7 +295,12 @@ footer{
   margin-right: 20px;
   margin-left: 10px;
 }
-
+.me-4 {
+  margin-right: 0.5rem!important;
+}
+.text-title h1{
+  margin-right: 2rem;
+}
 }
 
 
@@ -304,12 +311,13 @@ footer{
   font-size: 3rem;
   justify-content:center;
   text-align:center;
+  margin-right: 2rem;
   }
 
     .section1 {
-      background-image : url(./imagenes/fondo-Web.png) !important;
+      background-image : url(./imagenes/fondo-Movil.png) !important;
       background-repeat: no-repeat !important;
-      background-size  :  100% 100% !important;
+      background-size  : 100% !important;
       
     }
 
@@ -357,7 +365,9 @@ footer{
   font-weight: bold;
 }
 
-
+.me-4 {
+  margin-right: 2.5rem!important;
+}
 }
 @media (min-width: 821px) and (max-width: 1440px) {
 
@@ -371,7 +381,7 @@ footer{
   .section1 {
     background-image : url(./imagenes/fondo-Web.png) !important;
     background-repeat: no-repeat !important;
-    background-size  :  100% 100% !important;
+    background-size  :  100% !important;
     
   }
 
@@ -413,6 +423,9 @@ footer{
  
   font-size: 1.5rem;
 }
+.me-4 {
+  margin-right: 2.5rem!important;
+}
 
 }
 @media  (min-width: 1440px) {
@@ -452,6 +465,39 @@ footer{
 
 /* Media Print Page */
 @media print {
+
+  .card-principal {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .card-principal .card {
+    flex: 0 0 70%;
+    max-width: 400px;
+    margin: 0;
+  }
+  .card-principal .card-title {
+    font-size: 0.8rem;
+  }
+  .card-principal .card-text {
+    font-size: 0.6rem;
+  }
+  .card-principal img {
+    max-width: 100%;
+  }
+  .card-principal .col-lg-3 {
+    flex: 0 0 28%;
+    max-width: 25%;
+
+  }
+  .cursos-especiales .row {
+   display:none;
+  }
+
+  .text-uppercase{
+    display:none;
+  }
+
 
   footer{
     display:none;
