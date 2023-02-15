@@ -11,7 +11,7 @@ body {
 .section1 {
   background-image : url(./img/fondo-Movil.png);
   background-repeat: no-repeat;
-  background-size  : cover;
+  background-size  : 100% !important;
 }
 
 .logo {
@@ -48,14 +48,15 @@ section {
   margin   : 0 auto;
 }
 
-.text-title {
-  width        : 90%;
-  display      : flex;
-  align-items  : center;
-  font-weight  : bold;
-  margin-bottom: 5%;
-  color        : #fff;
-  padding      : 20px;
+.text-title h1 {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  font-size      : 2rem;
+  font-weight    : bold;
+  margin-bottom  : 5%;
+  color          : #000;
+  padding        : 20px;
 }
 
 .colorSpan {
@@ -301,10 +302,6 @@ textarea:focus~label {
   resize: none;
 }
 
-h1 {
-  color      : #1C3144;
-  font-weight: bold;
-}
 
 .h3,
 .h5 {
@@ -380,9 +377,10 @@ footer {
   }
 
   .section1 {
-    background-image : url(./img/fondo-Movil.png);
+    background-image : url(./img/fondo-Web.png);
     background-repeat: no-repeat;
-    background-size  : cover;
+    background-size  : 100% !important;
+
   }
 
   .text--style {
@@ -391,6 +389,17 @@ footer {
     justify-content: center;
     align-items    : center;
     text-align     : justify;
+  }
+
+  .text-title h1 {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    font-size      : 5rem;
+    font-weight    : bold;
+    margin-bottom  : 5%;
+    color          : #000;
+    padding        : 60px;
   }
 
   .hero {
@@ -483,6 +492,8 @@ footer {
   .section1 {
     background-image : url(./img/fondo-Web.png);
     background-repeat: no-repeat;
+    background-size  : 100% !important;
+
   }
 
   .text--style {
@@ -494,6 +505,17 @@ footer {
     justify-content: center;
     align-items    : center;
     text-align     : justify;
+  }
+
+  .text-title h1 {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    font-size      : 8rem;
+    font-weight    : bold;
+    margin-bottom  : 5%;
+    color          : #000;
+    padding        : 20px;
   }
 
   .hero {
@@ -569,6 +591,12 @@ footer {
 
 /* Media Print Page */
 @media print {
+  * {
+    opacity  : 1 !important;
+    transform: none !important;
+    translate: none !important;
+  }
+
   .slider {
     display: none;
   }

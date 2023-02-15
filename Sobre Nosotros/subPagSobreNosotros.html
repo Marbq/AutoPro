@@ -13,6 +13,9 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
       rel="stylesheet"
@@ -21,7 +24,7 @@
 </head>
 
 <body>
-    <div class="section1">
+    <section class="section1">
         <nav class="navbar navbar-expand-lg bg-transparent navbar-light">
             <a href="#" class="navbar-brand d-flex align-items-center">
                 <img class="logo" src="./img/Logo.png" alt="Logotipo AutoPro" />
@@ -31,19 +34,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="d-flex align-items-center mx-auto navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="#" class="nav-item nav-link active">Inicio</a>
+                    <a href="#" class="nav-item nav-link">Inicio</a>
                     <a href="#" class="nav-item nav-link">Permisos</a>
                     <a href="#" class="nav-item nav-link">Formación</a>
-                    <a href="#" class="nav-item nav-link">Sobre nosotros</a>
+                    <a href="#" class="nav-item nav-link active">Sobre nosotros</a>
                 </div>
             </div>
         </nav>
-        <div class="text-title">
+        <div data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="130" class="text-title">
             <h1>
                 Sobre <span class="colorSpan">Nosotros</span>
             </h1>
         </div>
-    </div>
+    </section>
 
     <section class="container my-4">
         <div class="container">
@@ -53,7 +56,7 @@
                     <!-- Cambiar -->
                     <div class="row">
                         <div class="col-md-8 hero">
-                            <div class="hero--center">
+                            <div data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="130" class="hero--center">
                                 <div class="slider">
                                     <div class="slider__background--back"></div>
                                     <div class="slider__background--front"></div>
@@ -164,7 +167,6 @@
       </footer>
 
     <script src="./sobre-nosotros.js"></script>
-
     <script src="./js/bootstrap.min.js"></script>
 </body>
 
