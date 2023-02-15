@@ -9,7 +9,9 @@
 .nav-link.active,
 .nav-link:hover {
   color: #d5b92d !important;
+  
 }
+
 .logo {
   width: 70px;
   margin-left: 30px;
@@ -495,17 +497,25 @@ footer {
   button{
     display: none !important;
   }
-  
+  *{
+    opacity: 1 !important;
+    transform:none !important;
+    translate: none !important;
+  }
  
 }
 
 @media print and (orientation: landscape){
   .section-2-right{
-    width: 100%;
-    
+    width: 100%;    
   }
   .center-img{
     width: 50%;
     margin-left: 25%;
+  }
+ *{
+    opacity:  1 !important;
+    transform:none !important;
+    translate: none !important;
   }
 }
