@@ -9,7 +9,6 @@
 .nav-link.active,
 .nav-link:hover {
   color: #d5b92d !important;
-  
 }
 
 .logo {
@@ -46,7 +45,6 @@ span {
 }
 h1 {
   font-size: 3vw;
-  color: #333;
 }
 .logo {
   width: 70px;
@@ -347,7 +345,7 @@ footer {
 }
 
 /* ESTILOS PARA MÓVILES Y IMPRESION HORIZONTAL */
-@media only screen and (max-width: 800px) ,print and (orientation:portrait){
+@media only screen and (max-width: 800px), print and (orientation: portrait) {
   .section-1 {
     background-image: url("../imagenes/1.png");
     background-repeat: no-repeat;
@@ -463,10 +461,10 @@ footer {
   .footer-center {
     display: none;
   }
-  .navbar-collapse{
+  .navbar-collapse {
     background-color: white;
-        opacity: 0.8;
-    }
+    opacity: 0.8;
+  }
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1023px) {
@@ -483,47 +481,73 @@ footer {
   .center-button {
     margin-bottom: 10%;
   }
-  .navbar-collapse{
+  .navbar-collapse {
     background-color: white;
-        opacity: 0.8;
-    }
+    opacity: 0.8;
+  }
 }
 
 @media print {
-  .section-2, .section-3, .section-4, .section-5{
+  .section-3,
+  .section-4 {
     background: #fff !important;
     height: 100vh !important;
     page-break-after: always !important;
   }
-  .section-1{
+  .section-2 {
+    background: #fff !important;
+  }
+  .section-1 {
     background: #fff !important;
     height: 100vh !important;
   }
-  nav, footer, .section-2-left{
-    display:none !important;
+  .section-3 {
+    page-break-before: always !important;
   }
-  button{
+  nav,
+  footer,
+  .section-2-left {
     display: none !important;
   }
-  *{
+  button {
+    display: none !important;
+  }
+  * {
     opacity: 1 !important;
-    transform:none !important;
+    transform: none !important;
     translate: none !important;
   }
- 
+  .card1 {
+    display: block;
+  }
+  .card1s-container {
+    flex-direction: row;
+  }
+  .hideLeft,
+  .prevLeftSecond,
+  .nextRightSecond,
+  .hideRight,
+  .next,
+  .selected {
+    display: none;
+  }
+  .prev {
+    margin-left: 50px;
+  }
 }
 
-@media print and (orientation: landscape){
-  .section-2-right{
-    width: 100%;    
+@media print and (orientation: landscape) {
+  .section-2-right {
+    width: 100%;
+    margin-top: -10%;
   }
-  .center-img{
+  .center-img {
     width: 50%;
     margin-left: 25%;
   }
- *{
-    opacity:  1 !important;
-    transform:none !important;
+  * {
+    opacity: 1 !important;
+    transform: none !important;
     translate: none !important;
   }
 }
