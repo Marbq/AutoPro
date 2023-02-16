@@ -34,11 +34,6 @@ const heroAnimations = () => {
         heroDetails[i].setAttribute('style', 'opacity: 0');
     }
 
-    // Establecer el color de fondo de todos los puntos de navegación a rojo
-    for (i = 0; i < heroNavDot.length; i++) {
-        heroNavDot[i].setAttribute('style', 'background: #ed1319');
-    }
-
     // Incrementar la variable "count" y restablecerla en 1 si es mayor que el número de imágenes en el slider
     count++;
     if (count > heroImage.length) {
