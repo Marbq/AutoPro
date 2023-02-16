@@ -466,6 +466,13 @@ footer{
 /* Media Print Page */
 @media print {
 
+  *{
+    opacity:  1 !important;
+    transform:none !important;
+    translate: none !important;
+  }
+
+
   .card-principal {
     display: flex;
     flex-wrap: wrap;
