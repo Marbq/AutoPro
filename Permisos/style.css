@@ -1,0 +1,384 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+/*Media queries*/
+@media only screen and (max-width: 800px) {
+    #informacion_inicial, #permisos_3{
+        flex-direction: column;
+        background-image: url("../imagenes/2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #permisos_2, #permisos_4{
+        background-image: url('../imagenes/manchaDorada.jpg');
+        background-size: 100% 100%;
+    }
+}
+/*General*/
+*{
+    font-family: 'League Spartan', sans-serif;
+    margin:0;
+    padding:0;
+}
+.row{
+    margin:0;
+    padding:0;
+}
+.col-6{
+    margin:0;
+    padding:0;
+}
+/*Nav*/
+
+.section1 {
+    background-image : url('../imagenes/fondo-Web.png');
+    background-repeat: no-repeat;
+    background-size  : 100%!important;
+  }
+.nav-link.active,
+.nav-link:hover{
+  color:#d5b92d !important;
+}
+.logo {
+  width: 70px;
+  margin-left:30px;
+}
+
+.navbar a {
+  font-weight: bold;
+  font-size: 25px;
+}
+/*Titulo*/
+#titulo{
+    font-size: 10rem;
+    color: #333;
+    margin:20px;
+}
+h1{
+    font-size:35px;
+    padding-top:10rem;
+    margin-right:30px;
+}
+
+span{
+    color:#DCC333;
+}
+
+/*Body*/
+
+#informacion_inicial, #permisos_3{
+    background-image: url('../imagenes/manchaAzul.jpg');
+    background-size: 100% 100%;
+}
+#permisos_2, #permisos_4{
+    background-image: url('../imagenes/manchaDorada.jpg');
+    background-size: 100% 100%;
+}
+
+/*Permisos*/
+
+#permiso>img{
+    width:500px;
+    height:300px;
+}
+
+.card {
+    float: left;
+    max-width: 900px;
+    margin:70px;
+    margin-top: 16rem;
+    width:25rem;
+    
+}
+
+.card .wrapper {
+    background-color: #fff;
+    min-height: 540px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.card .wrapper:hover .data {
+    transform: translateY(0);
+}
+.card .data {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    transition: transform 0.3s;
+}
+.card .author {
+    font-size: 40px;
+  font-weight: bold;
+  background-color: #DCC333;
+  color:#1C3155;
+  padding:5px;
+}
+.card .text {
+margin: 0;
+  background-color:#1C3155;
+  opacity:85%;
+  padding: 5px;
+  font-size:25px;
+}
+.card input[type='checkbox'] {
+    display: none;
+}
+
+
+#b{
+ background: url('../imagenes/B2.jpg') center / cover no-repeat;
+}
+
+#am {
+    background: url('../imagenes/AM.jpg') center / cover no-repeat;
+   }
+
+#a {
+    background: url('../imagenes/A.jpg') center / cover no-repeat;
+}
+#a1 {
+    background: url('../imagenes/A1.jpg') center / cover no-repeat;
+}
+
+#a2 {
+    background: url('../imagenes/A2.jpg') center / cover no-repeat;
+}
+
+#c {
+    background: url('../imagenes/C.jpg') center / cover no-repeat;
+}
+
+#c_e {
+    background: url('../imagenes/C+E.jpg') center / cover no-repeat;
+}
+#d {
+    background: url('../imagenes/D.jpg') center / cover no-repeat;
+}
+.example-2 .data{
+    color: #fff;
+    transform: translateY(calc(225px + 4em));
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #1c3144;
+  }
+  .footer-up {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left img {
+    height: 50px;
+    margin-right: 20px;
+  }
+  .footer-right,
+  .footer-center {
+    margin-bottom: 20px;
+  }
+  
+  .footer-center {
+    margin: 0px 10px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .footer-bottom-copyrights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c3144;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .footer-bottom i {
+    font-size: 40px;
+    margin: 0 10px;
+  }
+
+/*Media queries*/
+@media only screen and (max-width: 800px) {
+    #informacion_inicial, #permisos_3{
+        background-image: url("../imagenes/2.png");
+        background-repeat: no-repeat;
+    }
+    #permisos_2, #permisos_4{
+        background-image: url("../imagenes/3.png");
+        background-repeat: no-repeat;
+    }
+    
+    .card {
+        margin:0;
+        margin-top: 0;
+        
+    }
+    h1{
+        padding-top:20px;
+    }
+    #titulo{
+        padding:0;
+    }
+    .text-end{
+        text-align: center!important;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .section1 {
+        background-image : url('../imagenes/fondo-Movil.png');
+        background-repeat: no-repeat;
+        background-size  : 100% !important;
+    
+      }
+    
+    #informacion_inicial, #permisos_3,#permisos_2, #permisos_4{
+        background-image: none;
+    }
+    
+    #titulo{
+        font-size:53px;
+    }
+
+    h1{
+        font-size:25px;
+        padding:10px;
+    }
+    #informacion_inicial{
+        justify-content:center;
+    }
+    .text-end{
+        text-align: center!important;
+    }
+    .card{
+        padding:10px;
+    }
+
+    .justify-content-end{
+        justify-content: left!important;
+    }
+    
+    .col-6{
+        width:98%!important;
+    }
+    
+
+    .text{
+        font-size:23px !important;
+    }
+
+    #b .text{
+        font-size:25px!important;
+    }
+
+    .footer-right,
+    .footer-center {
+      display: none;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    #c_e .text, #a .text{
+        font-size:21.5px!important;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    #b .text{
+        font-size:21.2px !important;
+    }
+    .text{
+        font-size:21px!important;
+    }
+
+    #a .text{
+        font-size:18.2px !important;
+    }
+     #c_e .text{
+        font-size:19.5px !important;
+     }
+    #a1 .text{
+        font-size:21.5px !important;
+    }
+}
+
+@media print {
+    *{
+      opacity: 1 !important;
+      print-color-adjust:exact;
+      -webkit-print-color-adjust:exact;
+      transform:none !important;
+      translate: none !important;
+    }
+
+    .card{
+        page-break-inside: avoid;
+    }
+
+    #informacion_inicial, #permisos_3,#permisos_2, #permisos_4{
+        background-image: none;
+    }
+
+    .card{
+        page-break-inside: avoid;
+    }
+    
+
+   
+  }
+  
+@media print and (orientation: landscape){
+
+   *{
+      opacity:  1 !important;
+      print-color-adjust:exact;
+      -webkit-print-color-adjust:exact;
+      transform:none !important;
+      translate: none !important;
+
+    }
+
+    .row{
+        flex-wrap:nowrap;
+        margin:0;
+        padding:0;
+    }
+
+    #informacion_inicial, #permisos_3,#permisos_2, #permisos_4{
+        background-image: none;
+    }
+
+    .card{
+        page-break-inside: avoid;
+        margin-top:0;
+        margin-bottom: 0;
+    }
+
+    .footer-bottom-copyrights{
+        display:none;
+    }
+
+
+  }
